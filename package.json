@@ -8,7 +8,7 @@
     "./build/**/*"
   ],
   "scripts": {
-    "clean": "del ./build*",
+    "clean": "rmdir build /s /q",
     "build": "npm run clean && npx tsc",
     "git": "git add . && git commit -m 'publish'",
     "pub": "npm run git && npm version patch && npm run build && npm publish --access public"
