@@ -11,7 +11,7 @@
     "clean": "del ./build*",
     "build": "npm run clean && npx tsc",
     "git": "git add . && git commit -m 'publish'",
-    "pub": "npm run git && npm version patch && npm run build && npm publish"
+    "pub": "npm run git && npm version patch && npm run build && npm publish --access public"
   },
   "keywords": [],
   "author": "Emil Badalyan <emilbadalyan2001@gmail.com>",
